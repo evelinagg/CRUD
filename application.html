@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Application Manager</title>
+    <link rel="stylesheet" href="applstyles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="firstName" id="firstName" required="true">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="LastName" id="LastName" required="true">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="Email" id="Email" required="true">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="number" name="Age" id="Age" required="true">
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="text" name="PhoneNumber" id="PhoneNumber" required="true">
+                    </div>
+                    <div>
+                        <label for="Radio">Preffered way of communication</label>
+                            <input type="Radio" name="Radio" value="1" required="true">Email
+                            <input type="Radio" name="Radio" value="2" required="true">Phone number
+                    </div>
+                    <br>
+                    <div>
+                        <label>English level</label>
+                        <select id="englevel" required="true">
+                            <option value="">None</option>
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                            <option value="C1">C1</option>
+                            <option value="C2">C2</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Available to start</label>
+                        <input type="date" id="Available" name="Available" required="true">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Technical skills and courses</label>
+                        <input type="text" id="Tsc" name="Tsc">
+                    </div>
+                    <div>
+                        <label>Short personal presentation</label>
+                        <input type="text" id="Spp" name="Spp">
+                    </div>
+                    <div>
+                        <label>Study from home</label>
+                        <input type="checkbox" id="Study" name="Study" required="true">
+                    </div>
+
+
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="applicationList">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>Phone Number</th>
+                            <th>Preffered way of communication</th>
+                            <th>English level</th>
+                            <th>Available to start</th>
+                            <th>Technical skills and courses</th>
+                            <th>Short personal presentation</th>
+                            <th>Study from home</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="applscript.js"></script>
+</body>
+
+</html>
